@@ -1,19 +1,99 @@
-/**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #aaa;
+.swiper-container {
+  width: 100vw;
+  height: 630rpx;
+  position: relative;
+
+  swiper {
+    height: 100%;
+
+    image {
+      width: 100%;
+      height: 100%;
+      border-bottom-left-radius: 20rpx;
+      border-bottom-right-radius: 20rpx;
+    }
+  }
+
+  .dots {
+    position: absolute;
+    left: 50rpx;
+    bottom: 58rpx;
+    display: inline-flex;
+
+    .dot {
+      width: 8rpx;
+      height: 8rpx;
+      background-color: #fff;
+      opacity: 0.5;
+      border-radius: 4rpx;
+      margin-left: 4rpx;
+      transition: all 0.5s;
+
+      &.active {
+        width: 29rpx;
+        opacity: 1;
+      }
+    }
+  }
+
 }
 
-.userinfo-avatar {
+.member-area {
+  z-index: 2;
+  margin-top: -40rpx;
+  width: 688rpx;
+  height: 174rpx;
+  border-radius: 16rpx;
+  background-color: #fff;
   overflow: hidden;
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25rpx;
+  box-sizing: border-box;
 
-.usermotto {
-  margin-top: 200px;
+  .vip-box {
+    display: flex;
+
+    image {
+      width: 100rpx;
+      height: 100rpx;
+      border-radius: 50rpx;
+      overflow: hidden;
+      margin-right: 26rpx;
+      flex-shrink: 0;
+    }
+
+    .meta {
+      .title {
+        font-size: 32rpx;
+        font-weight: bold;
+        margin-bottom: 18rpx;
+      }
+
+      .tips {
+        margin-top: 14rpx;
+        color: #777777;
+        font-size: 24rpx;
+      }
+    }
+  }
+
+  .coin-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    image {
+      width: 130rpx;
+      height: 70rpx;
+    }
+
+    .currency {
+      margin-top: 10rpx;
+      color: #d32d25;
+    }
+  }
 }

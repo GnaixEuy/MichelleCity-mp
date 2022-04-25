@@ -1,7 +1,9 @@
-// app.ts
-App<IAppOption>({
+App({
   globalData: {},
   onLaunch() {
+    wx.cloud.init({
+      env:'michelle-city-mp-5f5orgn1ee13d3a'
+    });
     // 展示本地存储能力
     const logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())

@@ -23,7 +23,7 @@
   },
   "include": [
     "./**/*.ts"
-  ],
+, "miniprogram/app.js", "miniprogram/pages/order/index.js", "miniprogram/pages/menu/index.js", "miniprogram/pages/me/index.js", "miniprogram/pages/index/index.js"  ],
   "exclude": [
     "node_modules"
   ]
